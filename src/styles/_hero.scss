@@ -1,9 +1,9 @@
-
+@use 'variables';
 
 .hero{
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/1920x1080.png);
+    background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; /*Para aparecer o overlay, adicionamos essa posição*/
@@ -18,7 +18,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: variables.$colorBlackDefault;
         content: ''; /*Adicionando um overlay por cima do background-image-url*/
         opacity: .5;
     }
@@ -34,7 +34,7 @@
 
     &__logo{
         margin: 0 auto;
-        height: 80px;
+        height: 60px;
         display: block; /*Centraliza a logo*/
     }
 

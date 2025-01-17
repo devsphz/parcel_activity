@@ -6,19 +6,20 @@
     <title>Birthday</title>
     <link rel="stylesheet" href="styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="/src/images/ebac_logo.svg" alt="">
-            <p class="hero__text">Data do meu aniversário: 10d 12h 30m 15s</p>
+            <img class="hero__logo" src="/src/images/Logo.svg" alt="">
+            <p class="hero__text">Convite da festa: <span id="contador"></span></p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
                         <b>localização:</b>
-                        Allianz Parque - Barra Funda - SP
+                        Av. Boa Viagem, Recife - PE
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Data e Hora:</b>
@@ -30,7 +31,83 @@
         </div>
     </header>
 
+    <section class="event event--tema">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Tema: Cassino de Las Vegas</h2>
+                <p class="event__details__description">
+                    “Bem-vindo à Festa Cassino!”. <br>
+                    <br>
+                    Decoração: Teremos mesas de pôquer, fichas, cartas de baralho gigantes e letreiros neon. <br>
+                    <br>
+                    Trajes: Use vestidos longos ou smokings. <br>
+                    <br>
+                    Entretenimento: Jogos de cassino (roleta, blackjack, etc.), acompanhado por um DJ e banda ao vivo. <br>
+                    <br>
+                    Extras: Prêmios simbólicos para os "vencedores" e um espaço para dança. <br>
+                </p>
+            </div>
+            <img class="event__image" src="/src/images/Tema.png" alt="">
+        </div>
+    </section>
 
+    <section class="event event--bolo event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Bolo</h2>
+                <p class="event__details__description">
+                    O bolo terá quatro camadas decoradas: <br>
+                    <br>
+                    sendo a base exibindo o clássico letreiro “Welcome to Fabulous Las Vegas,” moldado em açúcar. <br>
+                    <br>
+                    As camadas intermediárias com cartas de baralho, fichas de pôquer e dados detalhados em fondant. <br>
+                    <br>
+                    No topo, uma roleta esculpida
+                </p>
+            </div>
+            <img class="event__image" src="/src/images/Bolo.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--doces">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Doces</h2>
+                <p class="event__details__description">
+                    Doces elaborados com: <br>
+                    <br>
+                    Cupcakes com cartas de baralho feitas de chocolate branco. <br>
+                    <br>
+                    Os cookies decorados com a forma de roletas e slot machines. <br>
+                    <br>
+                    trufas douradas em formato de moedas. <br>
+                </p>
+            </div>
+            <img class="event__image" src="/src/images/Doces.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--brinde event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Brindes</h2>
+                <p class="event__details__description">
+                    Ao final da noite, os vencedores de cada jogo serão premiados com brindes sofisticados com: <br>
+                    <br>
+                    Pequenos troféus em miniatura, gravados com o nome do evento. <br>
+                    <br>
+                    chaveiros com fichas de pôquer personalizadas. <br>
+                    <br>
+                    Chocolates em formato de cartas. <br>
+                    <br>
+                    E ao vencedor ou vencedora que mais tiver ganho as partidas, receberá um brinde extra, 4 garrafas de champanhes personalizadas, com o tema da festa.
+                </p>
+            </div>
+            <img class="event__image" src="/src/images/Brindes.png" alt="">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
